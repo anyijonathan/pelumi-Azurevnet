@@ -10,9 +10,17 @@
         "pretty": true,
         "noFallthroughCasesInSwitch": true,
         "noImplicitReturns": true,
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "paths": {
+            "*": ["node_modules/*"]
+        }
     },
-    "files": [
-        "index.ts"
+    "include": [
+        "**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
     ]
 }
